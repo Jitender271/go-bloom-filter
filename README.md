@@ -43,13 +43,13 @@ A sample config.json file may look like this:
   "growth_factor": 2.0,
   "tightening_ratio": 0.5,
   "initial_capacity": 1000
-}```
+}
 
 Add Elements:
 
 The application adds elements to the Bloom Filter and checks for membership:
 
-```bash
+
 elementsToAdd := []string{"apple", "banana", "cherry"}
 for _, item := range elementsToAdd {
     err := sbf.Add(item)
@@ -59,14 +59,18 @@ Check Membership:
 
 To check if an element might be present:
 
-```bash
+
 contains := sbf.MightContain("apple")
 ```
 
 ## Configuration
+
 initial_fp: Initial false positive rate (should be between 0 and 1).
+
 growth_factor: The factor by which capacity grows (should be greater than 1).
+
 tightening_ratio: Ratio to reduce the false positive rate (should be between 0 and 1).
+
 initial_capacity: Initial expected number of elements (should be greater than 0).
 
 ## Concurrency
