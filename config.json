@@ -1,0 +1,6 @@
+{
+  "initial_fp": 0.04,
+  "growth_factor": 4.0,
+  "tightening_ratio": 0.8,
+  "initial_capacity": 500
+}
