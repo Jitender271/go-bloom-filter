@@ -23,6 +23,4 @@ A Bloom Filter is a probabilistic data structure that provides a way to test whe
    git clone https://github.com/yourusername/scalable-bloom-filter.git
    cd scalable-bloom-filter
    go build
-   go run main.go -config=config.json
-         OR
-  go run main.go -defaults=true
+   go run main.go -config=config.json OR go run main.go -defaults=true
