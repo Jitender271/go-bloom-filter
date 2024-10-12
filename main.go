@@ -185,6 +185,7 @@ func optimalHashFuncs(m uint, n int) uint {
 func loadConfig(filepath string) (Config, error) {
 	var config Config
 	data, err := ioutil.ReadFile(filepath)
+
 	if err != nil {
 		return config, err
 	}
